@@ -13,9 +13,6 @@ st.write(
   """Choose the fruits you want in your Smoothie!
   """
 )
-st.text(smoothiefroot_response.json())
-
-
 
 cnx = st.connection("snowflake")
 session = cnx.session()
