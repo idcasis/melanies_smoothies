@@ -14,6 +14,9 @@ st.write(
   """
 )
 st.text(smoothiefroot_response.json())
+
+sf_df = st.dataframe(data=smoothiefroot_response.json(), use_container_width=True)
+
 cnx = st.connection("snowflake")
 session = cnx.session()
 
